@@ -26,7 +26,21 @@ function App() {
     <div>
       <h2>Let's get started!</h2>
       <p>hello</p>
-      <ExpenseItem></ExpenseItem>
+      <ExpenseItem
+       title = {expenses[0].title}
+       date = {expenses[0].date.toISOString()}
+       amount = {expenses[0].amount}
+     ></ExpenseItem>
+      <ExpenseItem
+       title = {expenses[1].title}
+       date = {expenses[1].date.toISOString()}
+       amount = {expenses[1].amount}
+     ></ExpenseItem>
+       <ExpenseItem
+       title = {expenses[2].title}
+       date = {expenses[2].date.toISOString()}
+       amount = {expenses[2].amount}
+     ></ExpenseItem>
     </div>
   );
 }
